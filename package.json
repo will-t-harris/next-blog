@@ -1,15 +1,30 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "9.3.5",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
-  }
+	"name": "learn-starter",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@emotion/babel-preset-css-prop": "^10.0.27",
+		"@emotion/core": "^10.0.35",
+		"@emotion/styled": "^10.0.27",
+		"@tippyjs/react": "^4.1.0",
+		"next": "9.3.5",
+		"react": "16.13.1",
+		"react-copy-to-clipboard": "^5.0.2",
+		"react-dom": "16.13.1",
+		"twin.macro": "^1.9.0"
+	},
+	"babelMacros": {
+		"twin": {
+			"config": "tailwind.config.js",
+			"preset": "emotion",
+			"debugProp": true,
+			"debugPlugins": false,
+			"debug": false
+		}
+	}
 }
