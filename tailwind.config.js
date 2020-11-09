@@ -5,7 +5,16 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        main: "#232946",
+      },
+      colors: {
+        accent: "#078080",
+        main: "#fffffe",
+        mainBody: "#b8c1ec",
+      },
+    },
   },
   variants: {},
   plugins: [],
